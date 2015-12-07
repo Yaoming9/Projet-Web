@@ -1,0 +1,204 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Amazon</title>
+  
+  <link rel="stylesheet" href="<?php echo $this->baseUrl().'/css/jquery-ui.css' ?>">
+  <link rel="stylesheet" href="<?php echo $this->baseUrl().'/boostrap3/css/bootstrap.css' ?>">
+  <link rel="stylesheet" href="<?php echo $this->baseUrl().'/css/style.css' ?>">
+</head>
+<body>
+	<header class="menu container-fluid">
+		<!-- Menu de base sur les grands écrans-->
+		<div class="row top container-fluid">
+			<div id="img_logo" class="text-center col-xs-2">
+				<img src="<?php echo $this->baseUrl() . '/imgs/logo.png' ?>" alt="Logo Amazon">
+			</div>
+		
+			<div class="col-xs-6 search_bar">
+				<div class="input-group">
+				  <div class="input-group-btn">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toutes nos boutiques  <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Toutes nos boutiques</a></li>
+						<li><a href="#">Animalerie</a></li>
+						<li><a href="#">Applis &amp; Jeux</a></li>
+						<li><a href="#">Auto et Moto</a></li>
+						<li><a href="#">Bagages</a></li>
+						<li><a href="#">Beauté et Parfum</a></li>
+						<li><a href="#">Beauté Prestige</a></li>
+						<li><a href="#">Bijoux</a></li>
+						<li><a href="#">Boutique chèques-cadeaux</a></li>
+						<li><a href="#">Boutique Kindle</a></li>
+						<li><a href="#">Bricolage</a></li>
+						<li><a href="#">Bébés &amp; Puériculture</a></li>
+						<li><a href="#">Chaussures et Sacs</a></li>
+						<li><a href="#">Cuisine &amp; Maison</a></li>
+						<li><a href="#">DVD &amp; Blu-ray</a></li>
+						<li><a href="#">Epicerie</a></li>
+						<li><a href="#">Fournitures de bureau</a></li>
+						<li><a href="#">Gros électroménager</a></li>
+						<li><a href="#">High-Tech</a></li>
+						<li><a href="#">Hygiène et Santé</a></li>
+						<li><a href="#">Informatique</a></li>
+						<li><a href="#">Instruments de musique &amp; Sono</a></li>
+						<li><a href="#">Jardin</a></li>
+						<li><a href="#">Jeux et Jouets</a></li>
+						<li><a href="#">Jeux vidéo</a></li>
+						<li><a href="#">Livres anglais et étrangers</a></li>
+						<li><a href="#">Livres en français</a></li>
+						<li><a href="#">Logiciels</a></li>
+						<li><a href="#">Luminaires et Eclairage</a></li>
+						<li><a href="#">Montres</a></li>
+						<li><a href="#">Musique : CD &amp; Vinyles</a></li>
+						<li><a href="#">Musique classique</a></li>
+						<li><a href="#">Secteur industriel &amp; scientifique</a></li>
+						<li><a href="#">Sports et Loisirs</a></li>
+						<li><a href="#">Téléchargement de musique</a></li>
+						<li><a href="#">Vêtements et accessoires</a></li>
+					</ul>
+				  </div>
+				  <input type="text" class="form-control" id="search_field" aria-label="...">
+				  <span class="input-group-addon loupe"><span class=" glyphicon glyphicon-search"></span></span>
+				</div>
+			  </div>
+			  
+			<div id="img_bann" class="col-xs-4">
+				<img src="<?php echo $this->baseUrl() . '/imgs/banniere_droite.png' ?>" alt="Boutiques de Noël">
+			</div>
+		</div>
+		
+		
+		<div class="row bottom container-fluid">
+			<div id="parcourir_boutiques" class="elem_menu_top col-xs-2">
+				<div id="nav_bout">
+					<span class="nav-line-1">Parcourir les</span></br>
+					<span class="nav-line-2"><b>boutiques</b><span class="caret"></span></span>
+				</div>
+				<?php
+					include ('/chunks/boutiques.phtml');
+				?>
+			</div>
+			
+			<div id="menu_sous_recherche" class="col-xs-4">
+				<div id="liens">
+					<a class="lien">Chez vous</a>
+					<a class="lien">Ventes Flash</a>
+					<a class="lien">Chèques-cadeaux</a>
+					<a class="lien">Vendre</a>
+					<a class="lien">Aide</a>
+				</div>
+			</div>
+
+			<div id="liens_droite" class="col-xs-6">
+				<div class="elem_menu_top col-xs-4" id="identification" >
+					<div id="nav_id">
+						<span class="nav-line-1" style="color: #7F858C;">Bonjour, identifiez-vous</span></br>
+						<span class="nav-line-2"><b>Votre compte</b><span class="caret"></span></span>
+					</div>
+					<div class="fleche_bulle" style="left: 118px; top:33px;" > 
+						<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
+					</div>
+					<ul class="menu_dropdown" id="menu_mon_compte">
+						<li id="first_elem"><a id="btn_ident" >Identifiez-vous</a></br>
+							<small style="color: #7C7C7C;">Nouveau client? <a id="lien_enr">Commencer ici</a></small>
+						</li>
+						
+						<hr>
+						
+						<li class="item"><a href="#">Votre compte</a></li>
+						<li class="item"><a href="#">Vos commandes</a></li>
+						<li class="item"><a href="#">Votre liste d'envies</a></li>
+						<li class="item"><a href="#">Vos recommendations</a></li>
+						<li class="item"><a href="#">Gérer vos abonnements</a></li>
+						<li class="item"><a href="#">Votre compte Amazon Premium</a></li>
+						<hr>
+						<li class="item"><a href="#">Gérer votre contenu et vos appareils</a></li>
+						<li class="item"><a href="#">Votre Kindle Unlimited</a></li>
+						<li class="item"><a href="#">Votre bibliothèque musicale</a></li>
+						<li class="item"><a href="#">Votre Cloud Drive</a></li>
+						<li class="item"><a href="#">Votre Bibliothèque de jeux et logiciels</a></li>
+						<li class="item"><a href="#">Vos applis et vos appareils</a></li>
+					</ul>
+				</div>
+				
+				<div class="elem_menu_top col-xs-3" id="premium">
+					<div id="nav_premium">
+						<span class="nav-line-1" style="color: #7F858C;">Adhérez</span></br>
+						<span class="nav-line-2"><b>Premium</b><span class="caret"></span></span>
+					</div>
+					<div class="fleche_bulle" style="left: 85px; top:33px;" > 
+						<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
+					</div>
+					<ul class="menu_dropdown" style="width:310px" id="menu_premium">
+						<li id="essai_premium">Essayer Amazon Premium gratuitement et bénéficiez de:</li>
+						<hr>
+						<li class="item_premium">Livraison en 1 jour ouvré gratuite</br>
+							<span class="caption_premium">Livraison gratuite à volonté pour des</br> millions d'articles</span>
+							     
+						</li>
+						<hr>
+						<li class="item_premium">Bibliothèque de prêt Kindle</br>
+							<span class="caption_premium">Empruntez gratuitement un ebook Kindle</br> par mois</span>
+						</li>
+						<hr>
+						<li class="item_premium" id="savoir_plus">> En savoir plus</li>
+					</ul>
+				</div>
+				
+				<div class="elem_menu_top col-xs-2" id="panier">
+					<span class="nav-line-1"><span class="glyphicon glyphicon-shopping-cart"></span></span></br>
+					<span class="nav-line-2"><b>Panier</b></span>
+				</div>
+				<div class="elem_menu_top col-xs-3" id="liste_envies">
+					<div id="nav_listeEnvies">
+						<span class="nav-line-1" style="color: #7F858C;">Liste</span></br>
+						<span class="nav-line-2"><b>d'envies</b><span class="caret"></span></span>
+					</div>
+					
+					<div class="fleche_bulle" style="left: 80px; top:33px;" > 
+						<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
+					</div>
+					
+					<ul class="menu_dropdown" id="menu_envies">
+						<li class="item"><a href="#">Créer une liste d'envies</a></li>
+						<li class="item"><a href="#">Trouver une liste d'envies</a></li>
+						<li class="item"><a href="#">Liste d'envies universelle</a>
+							<h6 class="menu-caption">Ajoutez des articles qui vous feraient</h6>
+							<h6 class="menu-caption">plaisir depuis n'importe quel site.</h6>
+						</li>
+						<li class="item last-item"><a href="#">Liste de naissance</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<!-- Menu lorsque l'écran est petit -->
+			<div id="hamburger-menu1" class="elem_menu_top col-xs-1">
+				<img width="48px" height="48px" src="<?php echo $this->baseUrl() . '/imgs/hamburger.png' ?>" alt="Hamburger">
+				<ul class="menu_dropdown" id="hamburger1">
+					<li class="item"><a href="#">Votre compte</a></li>
+					<li class="item"><a href="#">Votre panier</a></li>
+					<li class="item"><a href="#">Vos commandes</a></li>
+					<li class="item"><a href="#">Adhérez Premium</a></li>
+					<li class="item"><a href="#">Votre liste d'envies</a></li>
+				</ul>
+			</div>
+			
+			<div id="hamburger-menu2" class="elem_menu_top text-left col-xs-1">
+				<img width="48px" height="48px" src="<?php echo $this->baseUrl() . '/imgs/hamburger.png' ?>" alt="Hamburger">
+				<ul class="menu_dropdown" id="hamburger2">
+					<li class="item"><a href="#">Chez vous</a></li>
+					<li class="item"><a href="#">Ventes Flash</a></li>
+					<li class="item"><a href="#">Chèques-cadeaux</a></li>
+					<li class="item"><a href="#">Vendre</a></li>
+					<li class="item"><a href="#">Aide</a></li>
+				</ul>
+			</div>
+		
+		</div>
+		
+	</header>
+	
