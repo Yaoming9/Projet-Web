@@ -372,3 +372,46 @@ hr
 		display: none;
 	}
 }
+.container div{
+	/*border: 1px solid black;*/
+}
+#boutique-noel{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.publicite{
+	text-align: center;
+}
+#bloc-publicitaire{
+	background-color: rgb(247,247,247);
+}
+footer h3{
+	font-size: 1.2em;
+}
+#footer-logo{
+	width: 100px;
+}
+footer a{
+	color: #004B91;
+	font-size: 13px;
+}
+footer a:hover, footer a small:hover{
+	color: #E47911;
+}
+footer #pays li a{
+	font-size: 11px;
+}
+footer small{
+	color: #767676;
+}
+.amazon-derives a{
+	font-size: 11px;
+}
+#amazon-derives1, #amazon-derives2{
+	line-height: 12px;
+	margin-bottom: 10px;
+}
+#amazon-infos a{
+	font-size: 11px;
+}
