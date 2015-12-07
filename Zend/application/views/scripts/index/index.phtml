@@ -1,1 +1,59 @@
-<h1>Accueil</h1>
+<div class="container-fluid">
+	<div class="row" id="carousel">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="<?php echo $this->baseUrl().'/imgs/carousel1.jpg' ?>" alt="..." data-holder-rendered="true">
+		    </div>
+		    <div class="item">
+		      <img src="<?php echo $this->baseUrl().'/imgs/carousel2.jpg' ?>" alt="..." data-holder-rendered="true">
+		    </div>
+		    <div class="item">
+		      <img src="<?php echo $this->baseUrl().'/imgs/carousel3.jpg' ?>" alt="..." data-holder-rendered="true">
+		    </div>
+		    <div class="item">
+		      <img src="<?php echo $this->baseUrl().'/imgs/carousel4.jpg' ?>" alt="..." data-holder-rendered="true">
+		    </div>
+		    <div class="item">
+		      <img src="<?php echo $this->baseUrl().'/imgs/carousel5.jpg' ?>" alt="..." data-holder-rendered="true">
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-8">
+			<div class="row">
+				<img id="boutique-noel" src="<?php echo $this->baseUrl().'/imgs/boutique-noël.jpg' ?>" alt="img_boutique-noël"/>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Soyez livrés à temps pour noël</p>
+				</div>
+				<div class="col-xs-6">
+					<p>Vente flash pour noël</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4" id="bloc-publicitaire">
+			<div class="row publicite">
+				<p>Amazon utilise des cookies. <a href="#">En savoir plus.</a></p>
+				<hr>
+			</div>
+			<div class="row publicite">
+				<p>LA Y EN A UNE AUTRE</p>
+			</div>
+		</div>
+	</div>
+</div>
