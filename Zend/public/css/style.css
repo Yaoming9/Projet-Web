@@ -2,28 +2,19 @@ html, body
 {
 	margin : 0px;
 }
-header{
-	border: none;
-}
+
 .menu
 {
 	border: 1px solid black;
 	background: #232F3E;
-	height: 100px;
+	height: auto;
 }
 
-#img_logo, #img_bann
+#img_logo, .search_bar, #img_bann
 {
 	margin-top: 0.5%;
 }
 
-#img_logo, .search_bar{
-	padding: 0px;
-}
-
-.search_bar{
-	margin-top: 11px;
-}
 .dropdown-menu, .dropdown-toggle
 {
 	color: #111;
@@ -55,17 +46,12 @@ header{
 {
 	color: white;
 	padding: 5px;
-	border-top: 1px solid #232F3E;
-	border-bottom: 1px solid #232F3E; 
+	border: 1px solid #232F3E; 
 }
 
 #nav_id{
 	width: 140px;
 }
-
- #nav_premium, #nav_listeEnvies{
- 	min-width: 88px;
- }
 
 .menu_dropdown
 {
@@ -110,10 +96,10 @@ header{
 #menu_sous_recherche
 {
 	position: relative;
-	overflow: hidden;
-	top: 10px;
+	float: left;
 	z-index: 20;
-	padding: 0px;
+	padding: 0px 10px;
+	margin-bottom: 25px;
 	font-family: arial, sans-serif;
 }
 
@@ -127,7 +113,7 @@ header{
 {
 	color: #CCC;
 	font-size: 13px;
-	padding: 0px 6px;
+	padding: 0px 8px;
 }
 
 .lien:hover
@@ -354,7 +340,28 @@ hr
 	border: 0px;
 }
 
-/*@media screen and (max-width: 800px){
+
+/*@media screen and (max-width: 1000px){
+	
+	#img_logo, .search_bar
+	{
+		display: block;
+	}
+	
+	#img_bann,#liens_droite{
+		display: none;
+	}
+	
+	#hamburger-menu1{
+		display: block;
+	}
+	
+	.menu{
+		height: auto;
+	}
+} 
+
+@media screen and (max-width: 800px){
 	#hamburger-menu1,.elem_menu_top{
 		display: none;
 	}
@@ -373,9 +380,7 @@ hr
 		display: none;
 	}
 }*/
-*/.container div{
-	/*border: 1px solid black;*/
-}
+
 #boutique-noel{
 	width: 100%;
 	height: 100%;
@@ -421,7 +426,6 @@ footer small{
 	top: -10px;
 	border: none;
 	z-index: 5;
-	color: white;
 }
 #puce_dropdown_parcourir{
 	left: 77px;
@@ -434,14 +438,6 @@ footer small{
 }
 #puce_dropdown_envies{
 	left: 200px;
-}
-#carousel{
-	position: relative;
-	top: -4px;
-}
-#img_bann{
-	overflow: hidden;
-	padding: 0px;
 }
 .carousel_produits{
 	height: 285px;
@@ -461,7 +457,6 @@ footer small{
 }
 .carousel_controls{
 	position: absolute;
-	top: 48%;
 	z-index: 100;
 	background-color: white;
 	height: 100px;
@@ -484,6 +479,7 @@ footer small{
 	border-radius: 3px 0 0 3px;
     clip: rect(-10px,45px,110px,-10px);
     padding-left: 5px;
+	opacity: 1;
 }
 .carousel_produits-prev{
     left: 0;
@@ -505,4 +501,37 @@ footer small{
     max-width: 270px;
     max-height: 200px;
     vertical-align: middle;
+}
+#prev_1, #next_1{
+	top: 10%;
+}
+#prev_2, #next_2{
+	top: 23%;
+}
+#prev_3, #next_3{
+	top: 36%;
+}
+#prev_4, #next_4{
+	top: 49%;
+}
+#prev_5, #next_5{
+	top: 62%;
+}
+#prev_6, #next_6{
+	top: 75%;
+}
+#prev_7, #next_7{
+	top: 88%;
+}
+.lien_voir_plus{
+	font-size: 14px;
+	line-height: 35px;
+	padding-left: 15px;
+	color: #247bbd;
+	text-overflow: ellipsis;
+	text-decoration:none;
+}
+.lien_voir_plus:hover{
+	color: #CF5500;
+	text-decoration: underline;
 }
