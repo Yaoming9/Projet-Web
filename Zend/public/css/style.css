@@ -12,11 +12,18 @@ header{
 	height: 100px;
 }
 
-#img_logo, .search_bar, #img_bann
+#img_logo, #img_bann
 {
 	margin-top: 0.5%;
 }
 
+#img_logo, .search_bar{
+	padding: 0px;
+}
+
+.search_bar{
+	margin-top: 11px;
+}
 .dropdown-menu, .dropdown-toggle
 {
 	color: #111;
@@ -347,28 +354,7 @@ hr
 	border: 0px;
 }
 
-
-/*@media screen and (max-width: 1000px){
-	
-	#img_logo, .search_bar
-	{
-		display: block;
-	}
-	
-	#img_bann,#liens_droite{
-		display: none;
-	}
-	
-	#hamburger-menu1{
-		display: block;
-	}
-	
-	.menu{
-		height: auto;
-	}
-} 
-
-@media screen and (max-width: 800px){
+/*@media screen and (max-width: 800px){
 	#hamburger-menu1,.elem_menu_top{
 		display: none;
 	}
@@ -386,7 +372,7 @@ hr
 	.dropdown-toggle, .dropdown-menu{
 		display: none;
 	}
-}
+}*/
 */.container div{
 	/*border: 1px solid black;*/
 }
@@ -435,6 +421,7 @@ footer small{
 	top: -10px;
 	border: none;
 	z-index: 5;
+	color: white;
 }
 #puce_dropdown_parcourir{
 	left: 77px;
@@ -451,4 +438,8 @@ footer small{
 #carousel{
 	position: relative;
 	top: -4px;
+}
+#img_bann{
+	overflow: hidden;
+	padding: 0px;
 }
