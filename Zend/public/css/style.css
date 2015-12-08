@@ -7,7 +7,7 @@ html, body
 {
 	border: 1px solid black;
 	background: #232F3E;
-	height: 99px;
+	height: auto;
 }
 
 #img_logo, .search_bar, #img_bann
@@ -38,18 +38,31 @@ html, body
 	height: 34px;
 }
 
-#parcourir_boutiques
+#parcourir_boutiques{
+	max-width: 110px;
+}
+
+#parcourir_boutiques, #nav_id, #nav_premium, #panier, #nav_listeEnvies
 {
-	padding: 6px 27px 0px 15px;
 	color: white;
+	padding: 5px;
+	border: 1px solid #232F3E; 
+}
+
+#nav_id{
+	width: 140px;
 }
 
 .menu_dropdown
 {
-	margin: 15px 0px 0px 0px;
+	margin: 10px 0px 0px 0px;
+	background-color: white;
+	z-index: 3;
 }
-
-.elem_menu_top:hover
+#menu_mon_compte, #menu_premium, #menu_envies{
+	margin-top: 0px;
+}
+#parcourir_boutiques:hover, #nav_id:hover, #nav_premium:hover, #panier:hover, #nav_listeEnvies:hover
 {
 	cursor: pointer;
 	color: white;
@@ -65,7 +78,7 @@ html, body
 
 .nav-line-1
 {
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 14px;
 	height: 14px;
 	font-weight: 400;
@@ -322,18 +335,13 @@ hr
 	margin-bottom: 10px;
 }
 
-.fleche_bulle
-{
-	position: absolute;
-}
-
 #hamburger-menu1, #hamburger-menu2
 {
 	border: 0px;
 }
 
 
-@media screen and (max-width: 1000px){
+/*@media screen and (max-width: 1000px){
 	
 	#img_logo, .search_bar
 	{
@@ -372,7 +380,7 @@ hr
 		display: none;
 	}
 }
-.container div{
+*/.container div{
 	/*border: 1px solid black;*/
 }
 #boutique-noel{
@@ -414,4 +422,22 @@ footer small{
 }
 #amazon-infos a{
 	font-size: 11px;
+}
+.puce_dropdown{
+	position: absolute;
+	top: -10px;
+	border: none;
+	z-index: 5;
+}
+#puce_dropdown_parcourir{
+	left: 77px;
+}
+#puce_dropdown_identification{
+	left: 102px;
+}
+#puce_dropdown_premium{
+	left: 69px;
+}
+#puce_dropdown_envies{
+	left: 200px;
 }

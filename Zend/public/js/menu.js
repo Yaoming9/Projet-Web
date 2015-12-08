@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	//on lance la fonction d'adaptation du design à chaque fois
 	//si l'utilisateur actualise sa page, le style ne bougera pas
-	adapterDesign();
+	// adapterDesign();
 	//--------------------//
 	
 	
@@ -24,7 +24,7 @@ $(document).ready(function(){
 	
 	//gestion de la position des éléments suivant la largeur de la fenêtre
 	$(window).resize(function(){
-		adapterDesign();
+		// adapterDesign();
 	});
 	//---------------------------//
 	
@@ -39,34 +39,34 @@ $(document).ready(function(){
 	
 });
 
-function adapterDesign()
-{
-	var windowWidth = $(window).width();
+// function adapterDesign()
+// {
+// 	var windowWidth = $(window).width();
 	
-	if (windowWidth <= 1000)
-	{
-		$('#menu_sous_recherche').removeClass("col-xs-4");
-		$('#menu_sous_recherche').addClass("col-xs-8");
+// 	if (windowWidth <= 1000)
+// 	{
+// 		$('#menu_sous_recherche').removeClass("col-xs-4");
+// 		$('#menu_sous_recherche').addClass("col-xs-8");
 		
-		$('#img_bann').detach();
+// 		$('#img_bann').detach();
 		
-		$('.search_bar').removeClass("col-xs-6");
-		$('.search_bar').addClass("col-xs-12");
-	}
-	else
-	{
-		if ($('#menu_sous_recherche').hasClass("col-xs-8"))
-		{
-			$('#menu_sous_recherche').removeClass("col-xs-8");
-			$('#menu_sous_recherche').addClass("col-xs-4");
-		}
+// 		$('.search_bar').removeClass("col-xs-6");
+// 		$('.search_bar').addClass("col-xs-12");
+// 	}
+// 	else
+// 	{
+// 		if ($('#menu_sous_recherche').hasClass("col-xs-8"))
+// 		{
+// 			$('#menu_sous_recherche').removeClass("col-xs-8");
+// 			$('#menu_sous_recherche').addClass("col-xs-4");
+// 		}
 		
-		if ($('.search_bar').hasClass("col-xs-12"))
-		{
-			$('.search_bar').removeClass("col-xs-12");
-			$('.search_bar').addClass("col-xs-6");
+// 		if ($('.search_bar').hasClass("col-xs-12"))
+// 		{
+// 			$('.search_bar').removeClass("col-xs-12");
+// 			$('.search_bar').addClass("col-xs-6");
 			
-			$('.row .top').append("#img_bann")
-		}
-	}
-}
+// 			$('.row .top').append("#img_bann")
+// 		}
+// 	}
+// }

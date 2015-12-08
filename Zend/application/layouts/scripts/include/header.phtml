@@ -1,11 +1,11 @@
 <header class="menu container-fluid">
 	<!-- Menu de base sur les grands écrans-->
 	<div class="row top container-fluid">
-		<div id="img_logo" class="text-center col-xs-2 col-md-1">
+		<div id="img_logo" class="text-left col-xs-2 col-md-2">
 			<img src="<?php echo $this->baseUrl() . '/imgs/logo.png' ?>" alt="Logo Amazon">
 		</div>
 	
-		<div class="col-xs-6 col-md-8 search_bar">
+		<div class="col-xs-8 col-md-6 search_bar">
 			<div class="input-group">
 			  <div class="input-group-btn">
 				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Toutes nos boutiques  <span class="caret"></span></button>
@@ -53,15 +53,15 @@
 			</div>
 		  </div>
 		  
-		<div id="img_bann" class="col-xs-4 col-md-3">
+		<div id="img_bann" class="hidden-sm col-md-4">
 			<img src="<?php echo $this->baseUrl() . '/imgs/banniere_droite.png' ?>" alt="Boutiques de Noël">
 		</div>
 	</div>
 	
 	
 	<div class="row bottom container-fluid">
-		<div id="parcourir_boutiques" class="elem_menu_top col-xs-2 col-md-1">
-			<div id="nav_bout">
+		<div class="col-xs-2 col-md-2 elem_menu_top">
+			<div id="parcourir_boutiques">
 				<span class="nav-line-1">Parcourir les</span></br>
 				<span class="nav-line-2"><b>boutiques</b><span class="caret"></span></span>
 			</div>
@@ -70,7 +70,7 @@
 			?>
 		</div>
 		
-		<div id="menu_sous_recherche" class="col-xs-4 col-md-7">
+		<div id="menu_sous_recherche" class="col-xs-8 col-md-5">
 			<div id="liens">
 				<a class="lien">Chez vous</a>
 				<a class="lien">Ventes Flash</a>
@@ -80,16 +80,14 @@
 			</div>
 		</div>
 
-		<div id="liens_droite" class="col-xs-6 col-md-4">
+		<div id="liens_droite" class="hidden-sm hidden-xs col-md-5">
 			<div class="elem_menu_top col-xs-4 col-md-4" id="identification" >
 				<div id="nav_id">
 					<span class="nav-line-1" style="color: #7F858C;">Bonjour, identifiez-vous</span></br>
 					<span class="nav-line-2"><b>Votre compte</b><span class="caret"></span></span>
 				</div>
-				<div class="fleche_bulle" style="left: 118px; top:33px;" > 
-					<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
-				</div>
 				<ul class="menu_dropdown" id="menu_mon_compte">
+					<span id="puce_dropdown_identification" class="glyphicon glyphicon-triangle-top puce_dropdown" style="color:white;"></span>
 					<li id="first_elem"><a id="btn_ident" >Identifiez-vous</a></br>
 						<small style="color: #7C7C7C;">Nouveau client? <a id="lien_enr">Commencer ici</a></small>
 					</li>
@@ -117,10 +115,8 @@
 					<span class="nav-line-1" style="color: #7F858C;">Adhérez</span></br>
 					<span class="nav-line-2"><b>Premium</b><span class="caret"></span></span>
 				</div>
-				<div class="fleche_bulle" style="left: 85px; top:33px;" > 
-					<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
-				</div>
 				<ul class="menu_dropdown" style="width:310px" id="menu_premium">
+					<span id="puce_dropdown_premium" class="glyphicon glyphicon-triangle-top puce_dropdown" style="color:white;"></span>
 					<li id="essai_premium">Essayer Amazon Premium gratuitement et bénéficiez de:</li>
 					<hr>
 					<li class="item_premium">Livraison en 1 jour ouvré gratuite</br>
@@ -145,12 +141,9 @@
 					<span class="nav-line-1" style="color: #7F858C;">Liste</span></br>
 					<span class="nav-line-2"><b>d'envies</b><span class="caret"></span></span>
 				</div>
-				
-				<div class="fleche_bulle" style="left: 80px; top:33px;" > 
-					<span class="glyphicon glyphicon-triangle-top" style="color:white;"></span>
-				</div>
-				
+								
 				<ul class="menu_dropdown" id="menu_envies">
+					<span id="puce_dropdown_envies" class="glyphicon glyphicon-triangle-top puce_dropdown" style="color:white;"></span>
 					<li class="item"><a href="#">Créer une liste d'envies</a></li>
 					<li class="item"><a href="#">Trouver une liste d'envies</a></li>
 					<li class="item"><a href="#">Liste d'envies universelle</a>

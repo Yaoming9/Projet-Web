@@ -834,7 +834,7 @@ button.ui-button::-moz-focus-inner {
 	font-size: 1em;
 }
 .ui-widget-content {
-	background: #ffffff;
+/*	background: #ffffff;*/
 	color: #333333;
 }
 .ui-widget-content a {
