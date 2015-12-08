@@ -2,12 +2,14 @@ html, body
 {
 	margin : 0px;
 }
-
+header{
+	border: none;
+}
 .menu
 {
 	border: 1px solid black;
 	background: #232F3E;
-	height: auto;
+	height: 100px;
 }
 
 #img_logo, .search_bar, #img_bann
@@ -46,12 +48,17 @@ html, body
 {
 	color: white;
 	padding: 5px;
-	border: 1px solid #232F3E; 
+	border-top: 1px solid #232F3E;
+	border-bottom: 1px solid #232F3E; 
 }
 
 #nav_id{
 	width: 140px;
 }
+
+ #nav_premium, #nav_listeEnvies{
+ 	min-width: 88px;
+ }
 
 .menu_dropdown
 {
@@ -96,10 +103,10 @@ html, body
 #menu_sous_recherche
 {
 	position: relative;
-	float: left;
+	overflow: hidden;
+	top: 10px;
 	z-index: 20;
-	padding: 0px 10px;
-	margin-bottom: 25px;
+	padding: 0px;
 	font-family: arial, sans-serif;
 }
 
@@ -113,7 +120,7 @@ html, body
 {
 	color: #CCC;
 	font-size: 13px;
-	padding: 0px 8px;
+	padding: 0px 6px;
 }
 
 .lien:hover
@@ -440,4 +447,8 @@ footer small{
 }
 #puce_dropdown_envies{
 	left: 200px;
+}
+#carousel{
+	position: relative;
+	top: -4px;
 }
