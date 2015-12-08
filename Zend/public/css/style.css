@@ -48,7 +48,7 @@ header{
 }
 
 #parcourir_boutiques{
-	max-width: 110px;
+	width: 110px;
 }
 
 #parcourir_boutiques, #nav_id, #nav_premium, #panier, #nav_listeEnvies
