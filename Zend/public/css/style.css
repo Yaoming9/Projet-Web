@@ -386,7 +386,8 @@ hr
 }
 #bloc-publicitaire{
 	background-color: rgb(247,247,247);
-	min-height: 1000px;
+	position: relative;
+	top: -4px;
 }
 footer h3{
 	font-size: 1.2em;
@@ -481,6 +482,7 @@ footer small{
 }
 .carousel_produits-next{
 	right: 0;
+	top: 15%;
 	border-radius: 3px 0 0 3px;
     clip: rect(-10px,45px,110px,-10px);
     padding-left: 5px;
@@ -488,6 +490,7 @@ footer small{
 }
 .carousel_produits-prev{
     left: 0;
+    top: 15%;
     border-radius: 0 3px 3px 0;
     clip: rect(-10px,55px,110px,0);
     padding-right: 5px;;
@@ -507,27 +510,6 @@ footer small{
     max-height: 200px;
     vertical-align: middle;
 }
-#prev_1, #next_1{
-	top: 10%;
-}
-#prev_2, #next_2{
-	top: 23%;
-}
-#prev_3, #next_3{
-	top: 36%;
-}
-#prev_4, #next_4{
-	top: 49%;
-}
-#prev_5, #next_5{
-	top: 62%;
-}
-#prev_6, #next_6{
-	top: 75%;
-}
-#prev_7, #next_7{
-	top: 88%;
-}
 .lien_voir_plus{
 	font-size: 14px;
 	line-height: 35px;
@@ -540,6 +522,6 @@ footer small{
 	color: #CF5500;
 	text-decoration: underline;
 }
-#bloc_produits > .row{
-	padding: 0px 15px;
+#bloc_produits > .row_carousel{
+	padding: 0px 40px;
 }
