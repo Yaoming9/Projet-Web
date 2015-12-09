@@ -386,6 +386,7 @@ hr
 }
 #bloc-publicitaire{
 	background-color: rgb(247,247,247);
+	min-height: 1000px;
 }
 footer h3{
 	font-size: 1.2em;
@@ -538,4 +539,7 @@ footer small{
 .lien_voir_plus:hover{
 	color: #CF5500;
 	text-decoration: underline;
+}
+#bloc_produits > .row{
+	padding: 0px 15px;
 }
