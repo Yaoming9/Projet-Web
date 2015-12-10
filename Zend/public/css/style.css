@@ -17,7 +17,7 @@ header{
 	margin-top: 0.5%;
 }
 
-#img_logo, .search_bar{
+.search_bar{
 	padding: 0px;
 }
 
@@ -55,10 +55,11 @@ header{
 {
 	color: white;
 	padding: 5px;
+	border-right: 1px solid rgba(0,0,0,0);
+	border-left: 1px solid rgba(0,0,0,0);
 	border-top: 1px solid #232F3E;
 	border-bottom: 1px solid #232F3E; 
 }
-
 #nav_id{
 	width: 140px;
 }
@@ -524,4 +525,7 @@ footer small{
 }
 #bloc_produits > .row_carousel{
 	padding: 0px 40px;
+}
+#liens_droite{
+	padding-right: 0px; 
 }
