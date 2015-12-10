@@ -11,6 +11,46 @@ $(document).ready(function(){
 	setupCarousel(carousel_6, prev_6, next_6);
 	setupCarousel(carousel_7, prev_7, next_7);
 	
+	
+	$("#carousel_reco")
+		.on('jcarousel:firstin', '.first', function(event, carousel){
+			$('.pageNum').text("1");
+		})
+		.on('jcarousel:lastin', '.last', function(event, carousel){
+			$('.pageNum').text("5");
+		})
+		.jcarousel({
+			// Configuration du carousel ici
+			transitions: true,
+			wrap: 'both'
+		});
+	
+	$("#prev_reco").jcarouselControl({
+        target: '-=4'
+    });
+
+    $("#next_reco").jcarouselControl({
+        target: '+=4'
+    });
+	
+	$("#prev_reco").click(function(){
+        var compteur = $('.pageNum').text();
+		if (compteur > 1)
+			compteur --;
+		else
+			compteur = 5;
+		$('.pageNum').text(compteur);
+    });
+	
+	$("#next_reco").click(function(){
+        var compteur = $('.pageNum').text();
+		if (compteur < 5)
+			compteur ++;
+		else
+			compteur = 1;
+		$('.pageNum').text(compteur);
+    });
+	
 	$('.elem_menu_top').hover(function () {
 		$(this).children(".menu_dropdown").stop(true, false).slideDown();
 		},
