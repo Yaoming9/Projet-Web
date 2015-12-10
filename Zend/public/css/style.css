@@ -201,7 +201,7 @@ header{
 	border-bottom: 0px;
 }
 
-#btn_ident
+.btn_ident
 {
 	display: block;
     height: 33px;
@@ -234,7 +234,7 @@ header{
     font-size: 13px;
 }
 
-#lien_enr, #lien_enr:active, #lien_enr:link, #lien_enr:visited
+.lien_enr, .lien_enr:active, .lien_enr:link, .lien_enr:visited
 {
     text-decoration: none;
     color: #0066c0;
@@ -353,29 +353,6 @@ hr
 {
 	border: 0px;
 }
-
-/*@media screen and (max-width: 800px){
-	#hamburger-menu1,.elem_menu_top{
-		display: none;
-	}
-	
-	#hamburger-menu2{
-		display: block;
-	}
-}
-
-@media screen and (max-width: 480px){
-	.lien{
-		display: block;
-	}
-	
-	.dropdown-toggle, .dropdown-menu{
-		display: none;
-	}
-}*/
-*/.container div{
-	/*border: 1px solid black;*/
-}
 #boutique-noel{
 	width: 100%;
 	height: 100%;
@@ -445,12 +422,13 @@ footer small{
 	overflow: hidden;
 	padding: 0px;
 }
-.carousel_produits{
+.carousel_produits, .carousel_recommendations{
 	height: 285px;
     position: relative;
     overflow: hidden;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
-.carousel_produits ul {
+.carousel_produits ul, .carousel_recommendations ul{
     width: 20000em;
     position: relative;
     list-style: none;
@@ -570,6 +548,7 @@ footer small{
     cursor: pointer;
 	width: 25px;
 	padding: 0;
+	top: 20%;
 }
 .price_reco{
 	color: #b12704;

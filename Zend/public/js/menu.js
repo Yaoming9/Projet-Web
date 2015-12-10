@@ -17,7 +17,7 @@ $(document).ready(function(){
 			$('.pageNum').text("1");
 		})
 		.on('jcarousel:lastin', '.last', function(event, carousel){
-			$('.pageNum').text("5");
+			$('.pageNum').text("3");
 		})
 		.jcarousel({
 			// Configuration du carousel ici
@@ -26,11 +26,11 @@ $(document).ready(function(){
 		});
 	
 	$("#prev_reco").jcarouselControl({
-        target: '-=4'
+        target: '-=8'
     });
 
     $("#next_reco").jcarouselControl({
-        target: '+=4'
+        target: '+=8'
     });
 	
 	$("#prev_reco").click(function(){
@@ -38,13 +38,13 @@ $(document).ready(function(){
 		if (compteur > 1)
 			compteur --;
 		else
-			compteur = 5;
+			compteur = 3;
 		$('.pageNum').text(compteur);
     });
 	
 	$("#next_reco").click(function(){
         var compteur = $('.pageNum').text();
-		if (compteur < 5)
+		if (compteur < 3)
 			compteur ++;
 		else
 			compteur = 1;
