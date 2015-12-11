@@ -576,10 +576,10 @@ footer small{
 .carousel_recommendations{
 	border-bottom: 1px solid #DDD;
 }
-.reco{
+#test{
 	border: 1px solid #DDD;
     border-radius: 5px;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 .img_vu{
     padding: 0px 10px 0px 10px;
@@ -627,7 +627,7 @@ footer small{
 	height: 91px;
 }
 .container_to_top{
-	margin-top: 25px; 
+	margin-top: 50px; 
 	background-color: #f3f3f3;
     margin-bottom: 25px;
 	text-align: center;
@@ -651,7 +651,7 @@ footer small{
 	margin-top: 6%;
 }
 .pagination{
-	right: 5px;
+	right: 5%;
 	z-index: 100;
 	position: absolute;
 	font-size: 13px;
