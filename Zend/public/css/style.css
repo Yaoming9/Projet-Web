@@ -481,6 +481,14 @@ footer small{
 	width: 138px;
 	height: 35px;
 	top: 180px;
+    border-color: transparent transparent #a4a4a4;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+}
+.carousel-btn:hover{
+	border-color: transparent transparent #a4a4a4;
+    border-style: solid;
+    border-width: 1px 1px 1px;
 }
 .carousel-item img{
 	width: auto;
@@ -506,7 +514,9 @@ footer small{
 }
 .billBoard{
 	height: auto;
-	padding: 12px 0 12px 0;
+	margin: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 .billboard{
@@ -514,7 +524,6 @@ footer small{
     display: inline-block;
     width: 100%;
     height: 100%;
-    padding: 0 10px 0 10px;
     max-height: 200px;
     text-align: center;
     overflow: hidden;
@@ -658,4 +667,12 @@ footer small{
 }
 #liens_droite{
 	padding-right: 0px; 
+}
+.imgBillboard{
+    border: 0;
+	vertical-align: top;
+    max-height: 200px;
+    height: 100%;
+	max-width: 100%;
+	width: 440px;
 }

@@ -67,7 +67,6 @@ $(document).ready(function(){
 	$('.submenu').height( $('#menu_boutiques').height() );
 	//--------------------------------------------//
 	
-	
 	$('.carousel-btn').hide();
 	$('.carousel-item').hover(function () {
 		$(this).children(".carousel-btn").fadeIn(25);
