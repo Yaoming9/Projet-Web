@@ -441,9 +441,6 @@ footer small{
 	margin: 0 10px 0 0;
 	height: 225px;
 }
-.carousel_produits li:hover {
-    cursor: pointer;
-}
 .carousel_controls{
 	position: absolute;
 	z-index: 100;

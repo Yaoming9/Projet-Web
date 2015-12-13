@@ -85,15 +85,12 @@ $(document).ready(function(){
 	
 	$('.carousel-item').hover(function () {
 		$(this).children(".carousel-btn").fadeIn(25);
+		$(this).css('cursor','pointer');
+		$(this).children(".carousel-btn").width($(this).width());
 		},
 
 		function () {
 			$(this).children(".carousel-btn").fadeOut(25);
-	});
-	
-	$('.carousel-btn').each(function(){
-		var larg = $(this).parent(".carousel-item").width();
-		$(this).width(larg);
 	});
 	//-------------------//
 });
