@@ -439,6 +439,7 @@ footer small{
 .carousel_produits li {
     float: left;
 	margin: 0 10px 0 0;
+	height: 225px;
 }
 .carousel_controls{
 	position: absolute;

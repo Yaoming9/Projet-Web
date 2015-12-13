@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	//les menus déroulants
 	$(".menu_dropdown").menu();
-	$(".menu_dropdown").hide();
+	$(".menu_dropdown").hide();	
+	//--------------------------//
 	
+	//gestion des carousel produits
 	setupCarousel(carousel_1, prev_1, next_1);
 	setupCarousel(carousel_2, prev_2, next_2);
 	setupCarousel(carousel_3, prev_3, next_3);
@@ -10,8 +12,10 @@ $(document).ready(function(){
 	setupCarousel(carousel_5, prev_5, next_5);
 	setupCarousel(carousel_6, prev_6, next_6);
 	setupCarousel(carousel_7, prev_7, next_7);
+	//--------------------------------//
 	
 	
+	//Gestion carousel des recommendations
 	$("#carousel_reco")
 		.on('jcarousel:firstin', '.first', function(event, carousel){
 			$('.pageNum').text("1");
@@ -32,7 +36,11 @@ $(document).ready(function(){
     $("#next_reco").jcarouselControl({
         target: '+=8'
     });
+	//-------------------------------------//
 	
+	
+	
+	//Gestion pagination du carousel recommenations
 	$("#prev_reco").click(function(){
         var compteur = $('.pageNum').text();
 		if (compteur > 1)
@@ -50,6 +58,9 @@ $(document).ready(function(){
 			compteur = 1;
 		$('.pageNum').text(compteur);
     });
+	//-----------------------------------//
+	
+	
 	
 	$('.elem_menu_top').hover(function () {
 		$(this).children(".menu_dropdown").stop(true, false).slideDown();
@@ -67,7 +78,11 @@ $(document).ready(function(){
 	$('.submenu').height( $('#menu_boutiques').height() );
 	//--------------------------------------------//
 	
+	
+	
+	//Gestion des boutons au niveau des carousel
 	$('.carousel-btn').hide();
+	
 	$('.carousel-item').hover(function () {
 		$(this).children(".carousel-btn").fadeIn(25);
 		},
@@ -75,11 +90,17 @@ $(document).ready(function(){
 		function () {
 			$(this).children(".carousel-btn").fadeOut(25);
 	});
+	
+	$('.carousel-btn').each(function(){
+		var larg = $(this).parent(".carousel-item").width();
+		$(this).width(larg);
+	});
 	//-------------------//
 });
 
+
+
 function setupCarousel(id_carou, id_prev, id_next){
-	//carousel
 	$(id_carou)
 		.on('jcarousel:firstin', '.first', function(event, carousel){
 			$(id_prev).css('opacity', '.5');
@@ -94,7 +115,6 @@ function setupCarousel(id_carou, id_prev, id_next){
 			$(id_next).css('opacity', '1');
 		})
 		.jcarousel({
-			// Configuration du carousel ici
 			transitions: true
 		});
 	
