@@ -677,3 +677,7 @@ footer small{
 	max-width: 100%;
 	width: 440px;
 }
+#lienTop, #lienTop:hover, #lienTop:visited, #lienTop:focus{
+	color: #111;
+    text-decoration: none;
+}
