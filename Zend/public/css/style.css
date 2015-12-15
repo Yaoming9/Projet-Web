@@ -429,6 +429,9 @@ footer small{
     overflow: hidden;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
+#carousel_7{
+	border: none;
+}
 .carousel_produits ul, .carousel_recommendations ul{
     width: 20000em;
     position: relative;
@@ -589,7 +592,10 @@ footer small{
 #conteneur{
 	border: 1px solid #DDD;
     border-radius: 5px;
-    padding: 20px 20px;
+    padding: 20px 0px;
+}
+#conteneur h4, #conteneur h6{
+	padding-left: 20px;
 }
 .img_vu{
     padding: 0px 10px 0px 10px;
