@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 19 Décembre 2015 à 20:05
+-- Généré le :  Dim 20 Décembre 2015 à 12:09
 -- Version du serveur :  10.1.8-MariaDB
 -- Version de PHP :  5.5.30
 
@@ -147,9 +147,9 @@ INSERT INTO `liens` (`labelLien`, `url`, `legende`, `id_categ`) VALUES
 CREATE TABLE `produit` (
   `refProduit` int(50) NOT NULL,
   `libelleProduit` varchar(255) DEFAULT NULL,
-  `prix` float DEFAULT NULL,
+  `prix` double(6,2) DEFAULT NULL,
   `image` varchar(255) NOT NULL,
-  `note` float DEFAULT NULL,
+  `note` double(2,1) DEFAULT NULL,
   `isPremium` tinyint(1) NOT NULL,
   `nbAvis` int(4) DEFAULT NULL,
   `id_categorie` int(5) DEFAULT NULL
@@ -160,12 +160,12 @@ CREATE TABLE `produit` (
 --
 
 INSERT INTO `produit` (`refProduit`, `libelleProduit`, `prix`, `image`, `note`, `isPremium`, `nbAvis`, `id_categorie`) VALUES
-(1, 'Détails sur le produit MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Noir', 85, 'img_carousel/carousel1/img1.jpg', 1, 1, 3, 1),
-(2, 'MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Blanc', 76, 'img_carousel/carousel1/img2.jpg', 4, 0, 2, 1),
-(3, 'MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Rose Gold', 86, 'img_carousel/carousel1/img3.jpg', 4, 0, 1, 1),
-(4, 'Sony SmartWatch 2 Montre connectée Bluetooth 3.0 / NFC pour Smartphone - Bracelet en Silicone Noir', 129, 'img_carousel/carousel1/img4.jpg', 3, 0, 157, 1),
-(5, 'Sony SmartWatch 2 Montre connectée Bluetooth 3.0', 75, 'img_carousel/carousel1/img5.jpg', 2, 0, 10, 1),
-(6, 'Sony SmartWatch 7', 150, 'img_carousel/carousel1/img6.jpg', 3, 0, 15, 1),
+(1, 'Détails sur le produit MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Noir', 85.00, 'img_carousel/carousel1/img1.jpg', 1.0, 1, 3, 1),
+(2, 'MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Blanc', 76.00, 'img_carousel/carousel1/img2.jpg', 4.0, 0, 2, 1),
+(3, 'MyKronoz ZeBracelet 2 Montre d''activité pour Smartphone Rose Gold', 86.00, 'img_carousel/carousel1/img3.jpg', 4.0, 0, 1, 1),
+(4, 'Sony SmartWatch 2 Montre connectée Bluetooth 3.0 / NFC pour Smartphone - Bracelet en Silicone Noir', 129.00, 'img_carousel/carousel1/img4.jpg', 3.0, 0, 157, 1),
+(5, 'Sony SmartWatch 2 Montre connectée Bluetooth 3.0', 75.00, 'img_carousel/carousel1/img5.jpg', 2.0, 0, 10, 1),
+(6, 'Sony SmartWatch 7', 150.00, 'img_carousel/carousel1/img6.jpg', 3.0, 0, 15, 1),
 (7, NULL, NULL, 'img_carousel/carousel1/img7.jpg', NULL, 0, NULL, 1),
 (8, NULL, NULL, 'img_carousel/carousel1/img8.jpg', NULL, 0, NULL, 1),
 (9, NULL, NULL, 'img_carousel/carousel1/img9.jpg', NULL, 0, NULL, 1),
@@ -315,24 +315,24 @@ INSERT INTO `produit` (`refProduit`, `libelleProduit`, `prix`, `image`, `note`, 
 (153, NULL, NULL, 'img_carousel/carousel7/img31.jpg', NULL, 0, NULL, 7),
 (154, NULL, NULL, 'img_carousel/carousel7/img32.jpg', NULL, 0, NULL, 7),
 (155, NULL, NULL, 'img_carousel/carousel7/img33.jpg', NULL, 0, NULL, 7),
-(156, 'Acer H6520bd Vidéoprojecteur 3D DLP 16:9 full HD', 599, 'img_carousel/carousel_reco/img1.jpg', 3, 0, 2, 8),
-(157, 'MyKronoz ZeWatch 2 Montre d''activité pour Smartphone Noir', 74, 'img_carousel/carousel_reco/img2.jpg', 2, 0, 11, 8),
-(158, 'Batterie Externe Anker Astro E7 26800 mAh 3 Ports 4A - Batterie externe à capacité…', 45, 'img_carousel/carousel_reco/img3.jpg', 4, 0, 188, 8),
-(159, 'Bose® Écouteurs intra-auriculaires SoundTrue - Noir', 99, 'img_carousel/carousel_reco/img4.jpg', 4, 0, 51, 8),
-(160, 'Mad Catz CYBORG V.7 Clavier AZERTY Gaming pour PC - Noir mat', 62, 'img_carousel/carousel_reco/img5.jpg', 4, 0, 284, 8),
-(161, 'Razer BlackWidow Chroma Clavier Mécanique Noir', 187, 'img_carousel/carousel_reco/img6.jpg', 4, 0, 84, 8),
-(162, 'Razer Abyssus Souris Gaming Noir', 40, 'img_carousel/carousel_reco/img7.jpg', 4, 0, 14, 8),
-(163, 'Razer Naga Hex Wraith Souris Gaming Laser - Vert', 64, 'img_carousel/carousel_reco/img8.jpg', 4, 0, 93, 8),
-(164, 'Razer Goliathus Speed - Tapis de souris Gaming - Large', 31, 'img_carousel/carousel_reco/img9.jpg', 4, 0, 136, 8),
-(165, 'Razer Deathstalker Clavier Gaming (AZERTY)', 98, 'img_carousel/carousel_reco/img10.jpg', 4, 0, 57, 8),
-(166, 'Razer DeathAdder Chroma Souris de Jeu', 65, 'img_carousel/carousel_reco/img11.jpg', 4, 0, 51, 8),
-(167, 'Razer Goliathus Speed - Tapis de souris Gaming - Extended', 43, 'img_carousel/carousel_reco/img12.jpg', 4, 0, 136, 8),
-(168, 'SteelSeries QcK Tapis de souris Gaming Noir', 9, 'img_carousel/carousel_reco/img13.jpg', 4, 0, 336, 8),
-(169, 'Mad Catz R.A.T.7 Souris Filaire Gaming pour PC et MAC - Noir Mat', 77, 'img_carousel/carousel_reco/img14.jpg', 3, 0, 73, 8),
-(170, 'Razer Goliathus - Small (Control) Tapis de Souris Gaming', 14, 'img_carousel/carousel_reco/img15.jpg', 4, 0, 136, 8),
-(171, 'Logitech G300s Souris gaming optique Noir', 33, 'img_carousel/carousel_reco/img16.jpg', 4, 0, 28, 8),
-(172, 'Razer Bungee Câble Management pour Souris Gaming', 24, 'img_carousel/carousel_reco/img17.jpg', 3, 0, 15, 8),
-(173, 'Sennheiser HD598 - Casque Audio Circum-Aural - Beige', 193, 'img_carousel/carousel_reco/img18.jpg', 4, 0, 146, 8),
+(156, 'Acer H6520bd Vidéoprojecteur 3D DLP 16:9 full HD', 599.00, 'img_carousel/carousel_reco/img1.jpg', 3.5, 1, 2, 8),
+(157, 'MyKronoz ZeWatch 2 Montre d''activité pour Smartphone Noir', 74.55, 'img_carousel/carousel_reco/img2.jpg', 2.5, 1, 11, 8),
+(158, 'Batterie Externe Anker Astro E7 26800 mAh 3 Ports 4A - Batterie externe à capacité…', 45.99, 'img_carousel/carousel_reco/img3.jpg', 4.5, 1, 188, 8),
+(159, 'Bose® Écouteurs intra-auriculaires SoundTrue - Noir', 99.00, 'img_carousel/carousel_reco/img4.jpg', 4.0, 1, 51, 8),
+(160, 'Mad Catz CYBORG V.7 Clavier AZERTY Gaming pour PC - Noir mat', 62.57, 'img_carousel/carousel_reco/img5.jpg', 4.0, 1, 284, 8),
+(161, 'Razer BlackWidow Chroma Clavier Mécanique Noir', 187.44, 'img_carousel/carousel_reco/img6.jpg', 4.0, 1, 84, 8),
+(162, 'Razer Abyssus Souris Gaming Noir', 40.00, 'img_carousel/carousel_reco/img7.jpg', 4.0, 0, 14, 8),
+(163, 'Razer Naga Hex Wraith Souris Gaming Laser - Vert', 64.95, 'img_carousel/carousel_reco/img8.jpg', 4.0, 1, 93, 8),
+(164, 'Razer Goliathus Speed - Tapis de souris Gaming - Large', 31.99, 'img_carousel/carousel_reco/img9.jpg', 4.5, 1, 136, 8),
+(165, 'Razer Deathstalker Clavier Gaming (AZERTY)', 98.03, 'img_carousel/carousel_reco/img10.jpg', 4.0, 0, 57, 8),
+(166, 'Razer DeathAdder Chroma Souris de Jeu', 65.21, 'img_carousel/carousel_reco/img11.jpg', 4.5, 1, 51, 8),
+(167, 'Razer Goliathus Speed - Tapis de souris Gaming - Extended', 43.99, 'img_carousel/carousel_reco/img12.jpg', 4.5, 1, 136, 8),
+(168, 'SteelSeries QcK Tapis de souris Gaming Noir', 9.99, 'img_carousel/carousel_reco/img13.jpg', 4.5, 1, 336, 8),
+(169, 'Mad Catz R.A.T.7 Souris Filaire Gaming pour PC et MAC - Noir Mat', 77.90, 'img_carousel/carousel_reco/img14.jpg', 3.5, 1, 73, 8),
+(170, 'Razer Goliathus - Small (Control) Tapis de Souris Gaming', 14.39, 'img_carousel/carousel_reco/img15.jpg', 4.5, 0, 136, 8),
+(171, 'Logitech G300s Souris gaming optique Noir', 33.16, 'img_carousel/carousel_reco/img16.jpg', 4.5, 1, 28, 8),
+(172, 'Razer Bungee Câble Management pour Souris Gaming', 24.90, 'img_carousel/carousel_reco/img17.jpg', 3.5, 1, 15, 8),
+(173, 'Sennheiser HD598 - Casque Audio Circum-Aural - Beige', 193.70, 'img_carousel/carousel_reco/img18.jpg', 4.5, 1, 146, 8),
 (174, NULL, NULL, 'img_carousel/carousel_reco/img_mini1.jpg', NULL, 0, NULL, 8),
 (175, NULL, NULL, 'img_carousel/carousel_reco/img_mini2.jpg', NULL, 0, NULL, 8),
 (176, NULL, NULL, 'img_carousel/carousel_reco/img_mini3.jpg', NULL, 0, NULL, 8);
