@@ -32,7 +32,7 @@
 	</div>
 </div>
 <div class="container-fluid">
-	<div class="row col-md-offset-1">
+	<div class="row">
 		<div class="col-xs-9" id="bloc_produits">
 			<div class="row">
 				<img id="boutique-noel" src="<?php echo $this->baseUrl().'/imgs/boutique-noël.jpg' ?>" alt="img_boutique-noël"/>
@@ -773,7 +773,7 @@
 			</div>
 		</div>		
 		
-		<div class="col-xs-2" id="bloc-publicitaire">
+		<div class="col-xs-3" id="bloc-publicitaire">
 			<div class="row advert">
 				<div class="col-xs-12">
 					<p>Amazon utilise des cookies. <a href="#">En savoir plus.</a></p>
@@ -782,306 +782,310 @@
 			</div>
 			<div class="row advert">
 				<div class="col-xs-12">
-					<p>LA Y EN A UNE AUTRE</p>
+					<img src="<?php echo $this->baseUrl().'/imgs/add_croix_rouge.png' ?>" alt="croix-rouge">
 					<hr>
 				</div>
 			</div>
 			<div class="row advert">
 				<div class="col-xs-12">
-					<img src="<?php echo $this->baseUrl().'/imgs/pub_chaise.jpg' ?>" alt="chaise" width="100%">
+					<img src="<?php echo $this->baseUrl().'/imgs/pub_chaise.jpg' ?>" alt="chaise">
 					<hr>
 				</div>
 			</div>
 			<div class="row advert">
 				<div class="col-xs-12">
-					<img src="<?php echo $this->baseUrl().'/imgs/best_sell_ad.png' ?>" width="100%">
+					<img src="<?php echo $this->baseUrl().'/imgs/add_stars_wars.png'?>" alt="pub_stars_wars">
 					<hr>
 				</div>
 			</div>
-			<div class="row advert">
+			<div class="row advert top_5">
 				<div class="col-xs-12">
-					<img src="<?php echo $this->baseUrl().'/imgs/pub_chaise.jpg' ?>" alt="chaise" width="100%">
+					<p>Meilleures ventes de montres</p>
+					<span class="num_top_5">1</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel1/img1.jpg' ?>"><br>
+					<span class="num_top_5">2</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel1/img2.jpg' ?>"><br>
+					<span class="num_top_5">3</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel1/img3.jpg' ?>"><br>
+					<span class="num_top_5">4</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel1/img4.jpg' ?>"><br>
+					<span class="num_top_5">5</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel1/img5.jpg' ?>"><br>
+					<a href="#">Voir plus</a>
 					<hr>
 				</div>
 			</div>
-			<div class="row advert">
+			<div class="row advert top_5">
 				<div class="col-xs-12">
-					<img src="<?php echo $this->baseUrl().'/imgs/best_sell_ad.png' ?>" width="100%">
-					<hr>
+					<p>Meilleures ventes de consoles</p>
+					<span class="num_top_5">1</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel4/img1.jpg' ?>"><br>
+					<span class="num_top_5">2</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel4/img2.jpg' ?>"><br>
+					<span class="num_top_5">3</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel4/img3.jpg' ?>"><br>
+					<span class="num_top_5">4</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel4/img4.jpg' ?>"><br>
+					<span class="num_top_5">5</span><img src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel4/img5.jpg' ?>"><br>
+					<a href="#">Voir plus</a>
 				</div>
 			</div>
-			<div class="row advert">
-				<div class="col-xs-12">
-					<img src="<?php echo $this->baseUrl().'/imgs/best_sell_ad.png' ?>" width="100%">
-					<hr>
+		</div>		
+	</div>
+</div>
+
+<div class="container-fluid reco">
+	<div class="row reco-top" id="conteneur">
+		<h4>Vos articles vus récemment et vos recommandations en vedette 
+			<span class="pagination">Page <span class="pageNum">1</span> sur 3</span>
+		</h4>
+		<h6>Inspiré de votre historique de navigation</h6>
+		<div class="col-xs-12">
+			<div class="carousel_recommendations" id="carousel_reco">
+				<ul>
+					<li class="carousel-item-reco first">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img1.jpg' ?>" alt="Modèle 1">
+						</br></br><a href="#" class="liens_reco">Acer H6520bd Vidéoprojecteur 3D DLP 16:9 full HD</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">2</span>
+						</br><span class="price_reco">EUR 599,00 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img2.jpg' ?>" alt="Modèle 2">
+						</br></br><a href="#" class="liens_reco">MyKronoz ZeWatch 2 Montre d'activité pour Smartphone Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">11</a>
+						</br><span class="price_reco">EUR 74,55 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img3.jpg' ?>" alt="Modèle 3">
+						</br></br><a href="#" class="liens_reco">Batterie Externe Anker Astro E7 26800 mAh 3 Ports 4A - Batterie externe à capacité…</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">188</a>
+						</br><span class="price_reco">EUR 45,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img4.jpg' ?>" alt="Modèle 4">
+						</br></br><a href="#" class="liens_reco">Bose® Écouteurs intra-auriculaires SoundTrue - Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">51</a>
+						</br><span class="price_reco">EUR 99,00 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img5.jpg' ?>" alt="Modèle 5">
+						</br></br><a href="#" class="liens_reco">Mad Catz CYBORG V.7 Clavier AZERTY Gaming pour PC - Noir mat</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">284</a>
+						</br><span class="price_reco">EUR 62,57 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img6.jpg' ?>" alt="Modèle 6">
+						</br></br><a href="#" class="liens_reco">Razer BlackWidow Chroma Clavier Mécanique Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">84</a>
+						</br><span class="price_reco">EUR 187,44 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img7.jpg' ?>" alt="Modèle 7">
+						</br></br><a href="#" class="liens_reco">Razer Abyssus Souris Gaming Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">14</a>
+						</br><span class="price_reco">EUR 40,03 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img8.jpg' ?>" alt="Modèle 8">
+						</br></br><a href="#" class="liens_reco">Razer Naga Hex Wraith Souris Gaming Laser - Vert</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">93</a>
+						</br><span class="price_reco">64,95 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img9.jpg' ?>" alt="Modèle 9">
+						</br></br><a href="#" class="liens_reco">Razer Goliathus Speed - Tapis de souris Gaming - Large</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">136</a>
+						</br><span class="price_reco">EUR 31,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img10.jpg' ?>" alt="Modèle 10">
+						</br></br><a href="#" class="liens_reco">Razer Deathstalker Clavier Gaming (AZERTY)</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">57</a>
+						</br><span class="price_reco">EUR 98,03</span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img11.jpg' ?>" alt="Modèle 11">
+						</br></br><a href="#" class="liens_reco">Razer DeathAdder Chroma Souris de Jeu</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">51</a>
+						</br><span class="price_reco">EUR 65,21 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img12.jpg' ?>" alt="Modèle 12">
+						</br></br><a href="#" class="liens_reco">Razer Goliathus Speed - Tapis de souris Gaming - Extended</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">136</a>
+						</br><span class="price_reco">EUR 43,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img13.jpg' ?>" alt="Modèle 13">
+						</br></br><a href="#" class="liens_reco">SteelSeries QcK Tapis de souris Gaming Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">336</a>
+						</br><span class="price_reco">EUR 9,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img14.jpg' ?>" alt="Modèle 14">
+						</br></br><a href="#" class="liens_reco">Mad Catz R.A.T.7 Souris Filaire Gaming pour PC et MAC - Noir Mat</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">73</a>
+						</br><span class="price_reco">EUR 77,90 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img15.jpg' ?>" alt="Modèle 15">
+						</br></br><a href="#" class="liens_reco">Razer Goliathus - Small (Control) Tapis de Souris Gaming</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">136</a>
+						</br><span class="price_reco">EUR 14,39</span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img16.jpg' ?>" alt="Modèle 16">
+						</br></br><a href="#" class="liens_reco">Logitech G300s Souris gaming optique Noir</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">28</a>
+						</br><span class="price_reco">EUR 33,16 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img17.jpg' ?>" alt="Modèle 17">
+						</br></br><a href="#" class="liens_reco">Razer Bungee Câble Management pour Souris Gaming</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
+						<a href="#" class="liens_reco">15</a>
+						</br><span class="price_reco">EUR 24,90 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+					<li class="carousel-item-reco last">
+						<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img18.jpg' ?>" alt="Modèle 18">
+						</br></br><a href="#" class="liens_reco">Sennheiser HD598 - Casque Audio Circum-Aural - Beige</a>
+						</br>
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
+						<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
+						<a href="#" class="liens_reco">146</a>
+						</br><span class="price_reco">EUR 193,70 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
+					</li>
+				</ul>
+				
+				<a class="carousel_controls carousel_reco-prev" id="prev_reco" href="#"><span class="glyphicon glyphicon-chevron-left glyphicon-carousel-reco"></span></a>
+				<a class="carousel_controls carousel_reco-next" id="next_reco" href="#"><span class="glyphicon glyphicon-chevron-right glyphicon-carousel-reco"></span></a>
+			</div>
+		</div>
+		<div class="col-xs-12 row-reco-bottom">
+			<div class="hidden-xs col-sm-4 col-md-5 col-lg-3" id="partie_gauche_reco">
+				<span class="elem_reco_gauche col-xs-3 col-sm-3 col-md-4">Vous </br>avez vu</span>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 img_vu">
+					<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini1.jpg' ?>" alt="Modèle 1">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 img_vu">
+					<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini2.jpg' ?>" alt="Modèle 2">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 img_vu">
+					<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini3.jpg' ?>" alt="Modèle 3">
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-offset-1 col-lg-offset-6 col-md-6 col-lg-3" id="partie_droite_reco">
+				<div class="hidden-xs col-xs-3 col-sm-3 col-md-3" id="container_histo">
+					<a href="#" class="histo_reco"><span class="ico_histo_reco"> > </span> Afficher ou modifier votre historique de navigation</a>
+				</div>
+				<div class="col-xs-12 col-sm-9 col-md-9">
+					<span class="perso_reco">Voir les recommendations personnalisées</span></br>
+					<a class="btn_ident" id="btn_reco">Identifiez-vous</a>
+					<small>Nouveau client? <a class="lien_enr">Commencer ici</a></small>
 				</div>
 			</div>
 		</div>
-		
-		<div class="container col-xs-11 reco">
-			<div id="conteneur">
-				<div class="row reco-top">
-					<h4>Vos articles vus récemment et vos recommandations en vedette 
-						<span class="pagination">Page <span class="pageNum">1</span> sur 3</span>
-					</h4>
-					<h6>Inspiré de votre historique de navigation</h6>
-					<div class="carousel_recommendations" id="carousel_reco">
-						<ul>
-							<li class="carousel-item-reco first">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img1.jpg' ?>" alt="Modèle 1">
-								</br></br><a href="#" class="liens_reco">Acer H6520bd Vidéoprojecteur 3D DLP 16:9 full HD</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">2</span>
-								</br><span class="price_reco">EUR 599,00 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img2.jpg' ?>" alt="Modèle 2">
-								</br></br><a href="#" class="liens_reco">MyKronoz ZeWatch 2 Montre d'activité pour Smartphone Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">11</a>
-								</br><span class="price_reco">EUR 74,55 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img3.jpg' ?>" alt="Modèle 3">
-								</br></br><a href="#" class="liens_reco">Batterie Externe Anker Astro E7 26800 mAh 3 Ports 4A - Batterie externe à capacité…</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">188</a>
-								</br><span class="price_reco">EUR 45,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img4.jpg' ?>" alt="Modèle 4">
-								</br></br><a href="#" class="liens_reco">Bose® Écouteurs intra-auriculaires SoundTrue - Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">51</a>
-								</br><span class="price_reco">EUR 99,00 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img5.jpg' ?>" alt="Modèle 5">
-								</br></br><a href="#" class="liens_reco">Mad Catz CYBORG V.7 Clavier AZERTY Gaming pour PC - Noir mat</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">284</a>
-								</br><span class="price_reco">EUR 62,57 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img6.jpg' ?>" alt="Modèle 6">
-								</br></br><a href="#" class="liens_reco">Razer BlackWidow Chroma Clavier Mécanique Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">84</a>
-								</br><span class="price_reco">EUR 187,44 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img7.jpg' ?>" alt="Modèle 7">
-								</br></br><a href="#" class="liens_reco">Razer Abyssus Souris Gaming Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">14</a>
-								</br><span class="price_reco">EUR 40,03 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img8.jpg' ?>" alt="Modèle 8">
-								</br></br><a href="#" class="liens_reco">Razer Naga Hex Wraith Souris Gaming Laser - Vert</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">93</a>
-								</br><span class="price_reco">EUR 64,95 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img9.jpg' ?>" alt="Modèle 9">
-								</br></br><a href="#" class="liens_reco">Razer Goliathus Speed - Tapis de souris Gaming - Large</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">136</a>
-								</br><span class="price_reco">EUR 31,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img10.jpg' ?>" alt="Modèle 10">
-								</br></br><a href="#" class="liens_reco">Razer Deathstalker Clavier Gaming (AZERTY)</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">57</a>
-								</br><span class="price_reco">EUR 98,03</span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img11.jpg' ?>" alt="Modèle 11">
-								</br></br><a href="#" class="liens_reco">Razer DeathAdder Chroma Souris de Jeu</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">51</a>
-								</br><span class="price_reco">EUR 65,21 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img12.jpg' ?>" alt="Modèle 12">
-								</br></br><a href="#" class="liens_reco">Razer Goliathus Speed - Tapis de souris Gaming - Extended</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">136</a>
-								</br><span class="price_reco">EUR 43,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img13.jpg' ?>" alt="Modèle 13">
-								</br></br><a href="#" class="liens_reco">SteelSeries QcK Tapis de souris Gaming Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">336</a>
-								</br><span class="price_reco">EUR 9,99 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img14.jpg' ?>" alt="Modèle 14">
-								</br></br><a href="#" class="liens_reco">Mad Catz R.A.T.7 Souris Filaire Gaming pour PC et MAC - Noir Mat</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">73</a>
-								</br><span class="price_reco">EUR 77,90 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img15.jpg' ?>" alt="Modèle 15">
-								</br></br><a href="#" class="liens_reco">Razer Goliathus - Small (Control) Tapis de Souris Gaming</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">136</a>
-								</br><span class="price_reco">EUR 14,39</span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img16.jpg' ?>" alt="Modèle 16">
-								</br></br><a href="#" class="liens_reco">Logitech G300s Souris gaming optique Noir</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">28</a>
-								</br><span class="price_reco">EUR 33,16 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img17.jpg' ?>" alt="Modèle 17">
-								</br></br><a href="#" class="liens_reco">Razer Bungee Câble Management pour Souris Gaming</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_empty.png' ?>">
-								<a href="#" class="liens_reco">15</a>
-								</br><span class="price_reco">EUR 24,90 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-							<li class="carousel-item-reco last">
-								<img class="img_reco" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img18.jpg' ?>" alt="Modèle 18">
-								</br></br><a href="#" class="liens_reco">Sennheiser HD598 - Casque Audio Circum-Aural - Beige</a>
-								</br>
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_full.png' ?>">
-								<img class="rating" src="<?php echo $this->baseUrl().'/imgs/star_half_full.png' ?>">
-								<a href="#" class="liens_reco">146</a>
-								</br><span class="price_reco">EUR 193,70 <img class="imgPremium" src="<?php echo $this->baseUrl().'/imgs/premium.png' ?>"></span>
-							</li>
-						</ul>
-						
-						<a class="carousel_controls carousel_reco-prev" id="prev_reco" href="#"><span class="glyphicon glyphicon-chevron-left glyphicon-carousel-reco"></span></a>
-						<a class="carousel_controls carousel_reco-next" id="next_reco" href="#"><span class="glyphicon glyphicon-chevron-right glyphicon-carousel-reco"></span></a>
-					</div>
-				</div>
-				<div class="row-reco-bottom">
-					<div class="hidden-xs col-sm-4 col-md-5 col-lg-3" id="partie_gauche_reco">
-						<span class="elem_reco_gauche col-xs-3 col-sm-3 col-md-4">Vous </br>avez vu</span>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 img_vu">
-							<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini1.jpg' ?>" alt="Modèle 1">
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 img_vu">
-							<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini2.jpg' ?>" alt="Modèle 2">
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 img_vu">
-							<img class="content_vu" src="<?php echo $this->baseUrl().'/imgs/img_carousel/carousel_reco/img_mini3.jpg' ?>" alt="Modèle 3">
-						</div>
-					</div>
-					<div class="col-xs-8 col-sm-8 col-md-offset-1 col-lg-offset-6 col-md-6 col-lg-3" id="partie_droite_reco">
-						<div class="hidden-xs col-xs-3 col-sm-3 col-md-3" id="container_histo">
-							<a href="#" class="histo_reco"><span class="ico_histo_reco"> > </span> Afficher ou modifier votre historique de navigation</a>
-						</div>
-						<div class="col-xs-12 col-sm-9 col-md-9">
-							<span class="perso_reco">Voir les recommendations personnalisées</span></br>
-							<a class="btn_ident" id="btn_reco">Identifiez-vous</a>
-							<small>Nouveau client? <a class="lien_enr">Commencer ici</a></small>
-						</div>
-					</div>
-				</div>
+	</div>
+	<div class="row">
+		<a id="lienTop" href="#top">
+			<div class="container_to_top">
+				<span class="to_top">Retour en haut</span>
 			</div>
-			
-			<div class="row">
-				<a id="lienTop" href="#top">
-					<div class="container_to_top">
-						<span class="to_top">Retour en haut</span>
-					</div>
-				</a>
-			</div>
-		</div>
+		</a>
 	</div>
 </div>
