@@ -692,14 +692,6 @@ footer small{
 #liens_droite{
 	padding-right: 0px; 
 }
-.imgBillboard{
-    border: 0;
-	vertical-align: top;
-    max-height: 200px;
-    height: 100%;
-	max-width: 100%;
-	width: 440px;
-}
 #lienTop, #lienTop:hover, #lienTop:visited, #lienTop:focus{
 	color: #111;
     text-decoration: none;
