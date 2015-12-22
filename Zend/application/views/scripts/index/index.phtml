@@ -825,8 +825,24 @@
 	</div>
 </div>
 
-<div class="container-fluid reco">
-	<div class="row reco-top" id="conteneur">
+<div class="container-fluid reco" id="content_xs_categories">
+	<div class="visible-xs">
+		<ul class="list-group">
+			<li class="list-group-item" >Livres<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Musique, DVD et Blu-rays<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Jeux-vidéos et consoles<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >High-Tech et Informatique<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Jouets, Enfants et Bébés<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Maison, Bricolage, Animalerie<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Beauté, Santé, Epicerie<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Vêtements et Chaussures<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Montres et Bijoux<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Sports et Loisirs<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Auto et Moto<span class="glyphicon glyphicon-chevron-down"></span></li>
+			<li class="list-group-item" >Commerce, Industrie et Science<span class="glyphicon glyphicon-chevron-down"></span></li>
+		</ul>
+	</div>
+	<div class="row hidden-xs reco-top" id="conteneur">
 		<h4>Vos articles vus récemment et vos recommandations en vedette 
 			<span class="pagination">Page <span class="pageNum">1</span> sur 3</span>
 		</h4>
@@ -1056,7 +1072,7 @@
 				<a class="carousel_controls carousel_reco-next" id="next_reco" href="#"><span class="glyphicon glyphicon-chevron-right glyphicon-carousel-reco"></span></a>
 			</div>
 		</div>
-		<div class="col-xs-12 row-reco-bottom">
+		<div class="hidden-xs col-sm-12 row-reco-bottom">
 			<div class="hidden-xs col-sm-4 col-md-5 col-lg-3" id="partie_gauche_reco">
 				<span class="elem_reco_gauche col-xs-3 col-sm-3 col-md-4">Vous </br>avez vu</span>
 				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 img_vu">
@@ -1082,7 +1098,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<a id="lienTop" href="#top">
+		<a class="col-xs-12" id="lienTop" href="#top">
 			<div class="container_to_top">
 				<span class="to_top">Retour en haut</span>
 			</div>
