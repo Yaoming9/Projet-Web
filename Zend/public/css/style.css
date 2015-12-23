@@ -550,6 +550,12 @@ footer small{
     overflow: hidden;
 	border-right: 1px solid rgba(0, 0, 0, .1);
 }
+#billboard-xs .col-xs-6{
+	border: 1px solid rgba(0,0,0,.1);
+}
+#billboard-xs{
+	margin-bottom: 40px;
+}
 .last{
 	border: none;
 }
