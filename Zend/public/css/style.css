@@ -699,7 +699,7 @@ footer small{
 #content_xs_categories li{
 	position: relative;
 }
-#content_xs_categories span{
+#content_xs_categories .glyphicon-chevron-down, #content_xs_categories .glyphicon-chevron-down{
 	position: absolute;
 	top: 15px;
 	right: 15px;
