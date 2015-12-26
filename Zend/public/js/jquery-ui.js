@@ -6363,7 +6363,7 @@ var accordion = $.widget( "ui.accordion", {
 var menu = $.widget( "ui.menu", {
 	version: "1.11.4",
 	defaultElement: "<ul>",
-	delay: 300,
+	delay: 0,
 	options: {
 		icons: {
 			submenu: "ui-icon-carat-1-e"
@@ -6371,7 +6371,7 @@ var menu = $.widget( "ui.menu", {
 		items: "> *",
 		menus: "ul",
 		position: {
-			my: "left-1 top",
+			my: "left top",
 			at: "right top"
 		},
 		role: "menu",

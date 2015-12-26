@@ -72,9 +72,17 @@ $(document).ready(function(){
 
 	//positionnement des sous-menus du menu boutiques
 	$('#menu_boutiques').menu({
-		position: { my: "left top", at: "right+14 top-14 ", of: ".first" }
+		position: { my: "left top", at: "right-1 top ", of: "#menu_boutiques" }
 	});
-	
+
+	// gestion des border-radius
+	$('#menu_boutiques li').hover(function(){
+		$('#menu_boutiques').css('border-radius','5px 0px 0px 5px');
+	});
+	$('#menu_boutiques li').mouseleave(function(){
+		$('#menu_boutiques').css('border-radius','5px 5px 5px 5px');
+	});
+
 	$('.submenu').height( $('#menu_boutiques').height() );
 	//--------------------------------------------//
 	
