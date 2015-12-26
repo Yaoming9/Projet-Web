@@ -323,11 +323,14 @@ header{
 	padding: 0px 0px 10px 0px;
 }
 	
-.submenu
+.submenu-big-width
 {
 	width: 518px;
 }
-
+.submenu-small-width
+{
+	width: 260px;
+}
 #menu_envies
 {
 	left: -120px; 
