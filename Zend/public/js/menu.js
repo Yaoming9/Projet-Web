@@ -39,29 +39,6 @@ $(document).ready(function(){
 	//-------------------------------------//
 	
 	
-	
-	//Gestion pagination du carousel recommenations
-	$("#prev_reco").click(function(){
-        var compteur = $('.pageNum').text();
-		if (compteur > 1)
-			compteur --;
-		else
-			compteur = 3;
-		$('.pageNum').text(compteur);
-    });
-	
-	$("#next_reco").click(function(){
-        var compteur = $('.pageNum').text();
-		if (compteur < 3)
-			compteur ++;
-		else
-			compteur = 1;
-		$('.pageNum').text(compteur);
-    });
-	//-----------------------------------//
-	
-	
-	
 	$('.elem_menu_top').hover(function () {
 		$(this).children(".menu_dropdown").stop(true, false).slideDown();
 		},
@@ -76,14 +53,15 @@ $(document).ready(function(){
 	});
 
 	// gestion des border-radius
-	$('#menu_boutiques li').hover(function(){
-		$('#menu_boutiques').css('border-radius','5px 0px 0px 5px');
-	});
-	$('#menu_boutiques li').mouseleave(function(){
-		$('#menu_boutiques').css('border-radius','5px 5px 5px 5px');
-	});
-
+	$('#menu_boutiques .item').hover(function(){
+			$('#menu_boutiques').css('border-radius','5px 0px 0px 5px');
+		},
+		function(){
+			$('#menu_boutiques').css('border-radius','5px 5px 5px 5px');
+		});
+	
 	$('.submenu').height( $('#menu_boutiques').height() );
+	
 	//--------------------------------------------//
 	
 	

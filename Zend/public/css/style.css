@@ -694,12 +694,6 @@ footer small{
 .elem_reco_gauche, .img_vu{
 	margin-top: 6%;
 }
-.pagination{
-	right: 5%;
-	z-index: 100;
-	position: absolute;
-	font-size: 13px;
-}
 #liens_droite{
 	padding-right: 0px; 
 }
