@@ -164,7 +164,7 @@ header{
 .menu_dropdown, .submenu
 {
 	position: absolute;
-	width: 248px;
+	width: 255px;
 	background-color: white;
 	border: 1px solid #e6e6e6;
 	border-radius: 5px;
@@ -325,7 +325,7 @@ header{
 	
 .submenu
 {
-	width: auto;
+	width: 518px;
 }
 
 #menu_envies
@@ -709,4 +709,7 @@ footer small{
 	position: absolute;
 	top: 15px;
 	right: 15px;
+}
+#menu_boutiques{
+	top: 30px;
 }
